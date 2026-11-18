@@ -1,0 +1,26 @@
+/* Gambar 6: Header - (Article | Aside | Nav) - Footer */
+body { margin: 20px; font-family: "Times New Roman", serif; font-size: 14px; }
+
+.container {
+    display: flex;
+    flex-direction: column;    /* header, main, footer bertumpuk vertikal */
+    width: 500px;
+    min-height: 270px;
+}
+
+header, footer {
+    background-color: khaki;
+    padding: 10px;
+}
+
+.main {
+    display: flex;             /* article, aside, nav berjajar horizontal */
+    flex: 1;
+    min-height: 160px;
+}
+
+.main > * { padding: 10px; }
+
+article { flex: 3; background-color: white; }
+aside   { flex: 1; background-color: pink; }
+nav     { flex: 1; background-color: #00dbc8; }

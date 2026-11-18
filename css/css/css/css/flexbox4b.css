@@ -1,0 +1,60 @@
+/* Gambar 8(b): Header, (Aside | Article berisi 3 Image), Footer */
+body { margin: 20px; font-family: Arial, sans-serif; font-size: 13px; color: white; }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 560px;
+    padding: 10px;
+    background-color: #f7a8a8;
+}
+
+header, footer {
+    background-color: #9fd6cf;
+    text-align: center;
+    padding: 5px;
+}
+
+.main {
+    display: flex;
+    gap: 15px;
+    height: 220px;
+}
+
+aside {
+    flex: 1;
+    background-color: #5fb3b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+article {
+    flex: 2.5;
+    background-color: #f47b7b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+article p { margin: 0 0 10px; }
+
+.images {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.image {
+    width: 70px;
+    height: 70px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

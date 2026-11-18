@@ -1,0 +1,22 @@
+/* Gambar 4: position relative + absolute */
+body { margin: 0; padding: 10px; }
+
+/* Wadah jadi titik acuan untuk anak-anaknya yang absolute */
+.wadah {
+    position: relative;
+    width: 620px;
+    height: 450px;
+}
+
+.wadah div {
+    position: absolute;
+    border: 1px solid #555;
+    box-sizing: border-box;
+}
+
+.logo    { top: 0;     left: 0;     width: 120px; height: 50px;  background-color: #f4ea4a; }
+.header  { top: 0;     left: 130px; width: 490px; height: 50px;  background-color: #ff6a26; }
+.sidebar { top: 60px;  left: 0;     width: 120px; height: 330px; background-color: #addf91; }
+.konten  { top: 60px;  left: 130px; width: 360px; height: 330px; background-color: #d3d6d9; }
+.kanan   { top: 60px;  left: 500px; width: 120px; height: 330px; background-color: #4dd9f8; }
+.footer  { top: 400px; left: 0;     width: 620px; height: 45px;  background-color: #1a66ff; }

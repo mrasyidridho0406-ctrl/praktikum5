@@ -1,0 +1,33 @@
+/* Gambar 8(a): Nav di kiri, kanan berisi Header, Article+Aside, Footer */
+body { margin: 20px; font-family: "Times New Roman", serif; font-size: 14px; }
+
+.container {
+    display: flex;               /* nav | kanan */
+    width: 600px;
+    height: 330px;
+}
+
+nav {
+    flex: 0 0 140px;
+    background-color: pink;
+    padding: 10px;
+}
+
+.kanan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;      /* header, main, footer bertumpuk */
+}
+
+header, footer {
+    background-color: khaki;
+    padding: 10px;
+}
+
+.main {
+    flex: 1;
+    display: flex;               /* article | aside */
+}
+
+article { flex: 3; background-color: white; padding: 10px; }
+aside   { flex: 1; background-color: cyan;  padding: 10px; }
